@@ -1,0 +1,13 @@
+
+
+file ./FreeRTOS_13K.elf
+
+#shell echo target kf32sim --arch="G:\\13K_project\\gjz_test\\KF32A2218RTOS.def" --kfinstruct=kf32gdf --kfprint
+target kf32sim --kfprint  --arch="G:/13K_project/gjz_test/KF32A2218RTOS.def"  --kfinstruct=kf32gdf --kfprint
+
+load
+
+break core0_main
+
+
+

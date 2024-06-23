@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.chipon32.chiponide.buildsystem.llvm.configuration.release.1906125232">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.chipon32.chiponide.buildsystem.llvm.configuration.release.1906125232" moduleId="org.eclipse.cdt.core.settings" name="Clang Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildProperties="" cleanCommand="rm -f" description="" id="com.chipon32.chiponide.buildsystem.llvm.configuration.release.1906125232" name="Clang Release" parent="com.chipon32.chiponide.buildsystem.llvm.configuration.release">
+					<folderInfo id="com.chipon32.chiponide.buildsystem.llvm.configuration.release.1906125232." name="/" resourcePath="">
+						<toolChain id="com.chipon32.chiponide.toolchain.llvm.release.1309857576" name="KungFu32 Clang Tool" superClass="com.chipon32.chiponide.toolchain.llvm.release">
+							<option id="com.chipon32.chiponide.core.option.path.1643121699" name="Path" superClass="com.chipon32.chiponide.core.option.path" useByScannerDiscovery="false" value="E:\13K\IDE\KF32IDE_For_13K_Test_20240513\chiponide32\ChipONCC32" valueType="string"/>
+							<targetPlatform archList="all" id="com.chipon32.chiponide.core.toolchain.llvm.targetplatform.1241825167" isAbstract="false" name="Target Platform" osList="solaris,linux,hpux,aix,qnx,win32" superClass="com.chipon32.chiponide.core.toolchain.llvm.targetplatform"/>
+							<builder buildPath="${workspace_loc:${ProjName}}/Clang Release" id="chipon.managedbuild.target.gnu.builder.682808583" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="KungFu32 Builder" superClass="chipon.managedbuild.target.gnu.builder"/>
+							<tool id="com.chipon32.chiponide.tool.cpp.compiler.lang.1774402981" name="ChipON Clang++ Compiler" superClass="com.chipon32.chiponide.tool.cpp.compiler.lang">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.chipon.tool.c.compiler.clang.base.option.incpath.689266104" name="头文件路径(-I)" superClass="com.chipon.tool.c.compiler.clang.base.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Configurations}&quot;"/>
+								</option>
+								<option id="com.chipon.tool.c.compiler.clang.base.option.optlevel.2082690828" name="优化等级" superClass="com.chipon.tool.c.compiler.clang.base.option.optlevel" useByScannerDiscovery="false" value="com.chipon.tool.c.compiler.clang.base.option.optlevel.min" valueType="enumerated"/>
+								<option id="com.chipon.tool.c.compiler.clang.base.option.arch.1766430806" name="框架选择(-march)" superClass="com.chipon.tool.c.compiler.clang.base.option.arch" useByScannerDiscovery="false" value="com.chipon.tool.c.compiler.clang.base.option.arch.list4" valueType="enumerated"/>
+								<inputType id="com.chipon.tool.cpp.compiler.clangplug.base.input.1987214664" superClass="com.chipon.tool.cpp.compiler.clangplug.base.input"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.tool.c.compiler.lang.179909423" name="ChipON Clang Compiler" superClass="com.chipon32.chiponide.tool.c.compiler.lang">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.chipon.tool.c.compiler.clang.base.option.incpath.2084091131" name="头文件路径(-I)" superClass="com.chipon.tool.c.compiler.clang.base.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/RtosTestCase}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/FreeRTOS}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/FreeRTOS/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/FreeRTOS/portable}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\KF32IDE_For_13K_Test_20240513\chiponide32\ChipONCC32\ccd1_issue\lib\gcc\kf32\4.7.0\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\KF32IDE_For_13K_Test_20240513\chiponide32\ChipONCC32\ccd1_issue\lib\clang-runtimes\kf32\kf32_general\include\c++\v1&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\KF32IDE_For_13K_Test_20240513\chiponide32\ChipONCC32\ccd1_issue\lib\clang-runtimes\kf32\kf32_general\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Configurations}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/data}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/hardware}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/lld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/lld/drv}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/lld/flat_drv}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/lld/flat_reg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/lib/lld/reg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;F:\KF32IDE_For_13K_Test_20240513\chiponide32\ChipONCC32\ccd1_issue\lib\clang-runtimes\kf32\kf32_general\lib&quot;"/>
+								</option>
+								<option id="com.chipon.tool.c.compiler.clang.base.option.arch.1570731156" name="框架选择(-march)" superClass="com.chipon.tool.c.compiler.clang.base.option.arch" useByScannerDiscovery="false" value="com.chipon.tool.c.compiler.clang.base.option.arch.list4" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.chipon.tool.c.compiler.clang.base.option.defmac.1155742639" name="宏定义(-D)" superClass="com.chipon.tool.c.compiler.clang.base.option.defmac" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="FREERTOS_TEST"/>
+								</option>
+								<option id="com.chipon.tool.c.compiler.clang.base.option.optlevel.2122315431" name="优化等级" superClass="com.chipon.tool.c.compiler.clang.base.option.optlevel" useByScannerDiscovery="false" value="com.chipon.tool.c.compiler.clang.base.option.optlevel.high" valueType="enumerated"/>
+								<inputType id="com.chipon.tool.c.compiler.clang.base.input.1619409876" superClass="com.chipon.tool.c.compiler.clang.base.input"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.tool.llvm.assembler.1923582072" name="ChipON Assembler" superClass="com.chipon32.chiponide.tool.llvm.assembler">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input2.401193426" superClass="cdt.managedbuild.tool.gnu.assembler.input2"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.tool.llvm.linker.41084687" name="ChipON Linker" superClass="com.chipon32.chiponide.tool.llvm.linker">
+								<option id="com.chipon32.chiponide.core.option4.1809064133" name="芯片脚本文件" superClass="com.chipon32.chiponide.core.option4" useByScannerDiscovery="false" value="-T&quot;${workspace_loc:/${ProjName}/KF32DA2218SQVWS.ld}&quot;" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.906623050" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_RELS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.chipon32.chiponide.tool.llvm.objcopy.1137218269" name="ChipON ObjCopy" superClass="com.chipon32.chiponide.tool.llvm.objcopy"/>
+							<tool id="com.chipon32.chiponide.tool.llvm.objump.1821885423" name="ChipON ObjDump" superClass="com.chipon32.chiponide.tool.llvm.objump"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.chipon32.chiponide.buildsystem.llvm.configuration.debug.2120851268">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.chipon32.chiponide.buildsystem.llvm.configuration.debug.2120851268" moduleId="org.eclipse.cdt.core.settings" name="Clang Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildProperties="" cleanCommand="rm -f" description="" id="com.chipon32.chiponide.buildsystem.llvm.configuration.debug.2120851268" name="Clang Debug" parent="com.chipon32.chiponide.buildsystem.llvm.configuration.debug">
+					<folderInfo id="com.chipon32.chiponide.buildsystem.llvm.configuration.debug.2120851268." name="/" resourcePath="">
+						<toolChain id="com.chipon32.chiponide.toolchain.llvm.debug.212988795" name="KungFu32 Clang Tool" superClass="com.chipon32.chiponide.toolchain.llvm.debug">
+							<option id="com.chipon32.chiponide.core.option.path.1203895088" name="Path" superClass="com.chipon32.chiponide.core.option.path" value="E:\13K\IDE\KF32IDE_For_13K_Test_20240513\chiponide32\ChipONCC32" valueType="string"/>
+							<targetPlatform archList="all" id="com.chipon32.chiponide.core.toolchain.llvm.targetplatform.1383297174" isAbstract="false" name="Target Platform" osList="solaris,linux,hpux,aix,qnx,win32" superClass="com.chipon32.chiponide.core.toolchain.llvm.targetplatform"/>
+							<builder buildPath="${workspace_loc:${ProjName}}/Clang Debug" id="chipon.managedbuild.target.gnu.builder.342491565" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="KungFu32 Builder" superClass="chipon.managedbuild.target.gnu.builder"/>
+							<tool id="com.chipon32.chiponide.tool.cpp.compiler.lang.1354353613" name="ChipON Clang++ Compiler" superClass="com.chipon32.chiponide.tool.cpp.compiler.lang">
+								<inputType id="com.chipon.tool.cpp.compiler.clangplug.base.input.2458751" superClass="com.chipon.tool.cpp.compiler.clangplug.base.input"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.tool.c.compiler.lang.264847364" name="ChipON Clang Compiler" superClass="com.chipon32.chiponide.tool.c.compiler.lang">
+								<inputType id="com.chipon.tool.c.compiler.clang.base.input.780329857" superClass="com.chipon.tool.c.compiler.clang.base.input"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.tool.llvm.assembler.399610846" name="ChipON Assembler" superClass="com.chipon32.chiponide.tool.llvm.assembler">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input2.310280467" superClass="cdt.managedbuild.tool.gnu.assembler.input2"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.tool.llvm.linker.1573930965" name="ChipON Linker" superClass="com.chipon32.chiponide.tool.llvm.linker">
+								<option id="com.chipon32.chiponide.core.option4.175009972" name="芯片脚本文件" superClass="com.chipon32.chiponide.core.option4" value="-T&quot;${workspace_loc:/${ProjName}/KF32DA2218SQVWS.ld}&quot;" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1926525931" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_RELS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.chipon32.chiponide.tool.llvm.objcopy.1737972912" name="ChipON ObjCopy" superClass="com.chipon32.chiponide.tool.llvm.objcopy"/>
+							<tool id="com.chipon32.chiponide.tool.llvm.objump.1638745689" name="ChipON ObjDump" superClass="com.chipon32.chiponide.tool.llvm.objump"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="lib/lld/utils|Configurations/Kfx_Cfg_SswBmhd.c|lib/hardware/kf32a13k_hw_utlin.c|lib/hardware/kf32a13k_hw_spi.c|lib/hardware/kf32a13k_hw_sent.c|lib/hardware/kf32a13k_hw_rtc.c|lib/hardware/kf32a13k_hw_qei.c|lib/hardware/kf32a13k_hw_i2c.c|lib/hardware/kf32a13k_hw_gpio.c|lib/hardware/kf32a13k_hw_flash.c|lib/hardware/kf32a13k_hw_epwm.c|lib/hardware/kf32a13k_hw_dma.c|lib/hardware/kf32a13k_hw_crcs.c|lib/hardware/kf32a13k_hw_canfd.c|lib/hardware/kf32a13k_hw_bpt.c|lib/hardware/kf32a13k_hw_apt.c|lib/data" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="FreeRTOS_13K.com.chipon32.chiponide.core.projectType.c.1410555517" name="KF32-C" projectType="com.chipon32.chiponide.core.projectType.c"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Clang Release">
+			<resource resourceType="PROJECT" workspacePath="${ProjName}"/>
+		</configuration>
+		<configuration configurationName="Clang Debug">
+			<resource resourceType="PROJECT" workspacePath="${ProjName}"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>

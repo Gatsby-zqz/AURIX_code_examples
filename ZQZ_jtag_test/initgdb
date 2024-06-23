@@ -1,0 +1,13 @@
+
+
+file ./FreeRTOS_13K.elf
+
+
+target kf32remote COM3 --kfvoltage=3.3 --kfd-speed=1 --kft-code=4 --kfd-code=0  --nocarryLib=1 --kf-feature=0 --kf-drvier=1 --kf-authkey=0000000000000000000000000000000000000000000000000000000000000000 --kfinstruct=kf32gdf --kfprint --arch=./KF32A2218RTOS.def
+load
+
+break core0_main
+
+
+
+run

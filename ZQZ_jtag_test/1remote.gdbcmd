@@ -1,0 +1,35 @@
+
+set confirm off
+set pagination off
+set step-mode off
+set print elements unlimited
+set print repeats unlimited
+
+echo file ./FreeRTOS_13K.elf
+file ./_13KDebug_ROM.elf
+
+echo ________target kf32remote______________\n
+
+target kf32remote COM3 --kfvoltage=3.3 --kfd-speed=1 --kft-code=4 --kfd-code=0  --nocarryLib=1 --kf-feature=0 --kf-drvier=1 --kf-authkey=0000000000000000000000000000000000000000000000000000000000000000 --kfinstruct=kf32gdf --kfprint --arch=./KF32A2218.def
+
+dmi 4 1 0x16 0 0 0 0 1 0x40 0 0 0 
+coreread 0x100D
+coreread 0x100E
+
+
+echo ________open serial log______________\n
+kf32Debug on ./remote_prot.log
+
+
+echo _________load ____________________\n
+load
+echo _________init state ____________________\n
+
+break main
+break core0_main
+
+
+
+
+
+

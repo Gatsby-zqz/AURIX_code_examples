@@ -1,0 +1,6 @@
+"./Trap_Debug_tc0.o"
+"./debug_rom.o"
+"./kf_it.o"
+"./main.o"
+"./startup.o"
+"./vector.o"

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.chipon32.chiponide.core.configuration.llvm.cexe.release.1702087302">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.chipon32.chiponide.core.configuration.llvm.cexe.release.1702087302" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GMakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="com.chipon32.chiponide.core.configuration.llvm.cexe.release.1702087302" name="Release" parent="com.chipon32.chiponide.core.configuration.llvm.cexe.release">
+					<folderInfo id="com.chipon32.chiponide.core.configuration.llvm.cexe.release.1702087302." name="/" resourcePath="">
+						<toolChain id="com.chipon32.chiponide.core.toolchain.llvm.cexe.release.1570594841" name="KungFu32 Clang Tool" superClass="com.chipon32.chiponide.core.toolchain.llvm.cexe.release">
+							<targetPlatform archList="all" id="com.chipon32.chiponide.core.toolchain.llvm.baseplatform.1349446613" name="Release Platform" osList="solaris,linux,hpux,aix,qnx,win32" superClass="com.chipon32.chiponide.core.toolchain.llvm.baseplatform"/>
+							<builder buildPath="${workspace_loc:${ProjName}/${ConfigName}}" id="com.chipon32.chiponide.core.toolchain.llvm.basebuilder.1691590492" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="KungFu32 Builder" superClass="com.chipon32.chiponide.core.toolchain.llvm.basebuilder"/>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.baseclangplug.1555357547" name="ChipON C++ Lang Compiler" superClass="com.chipon32.chiponide.core.tool.llvm.baseclangplug">
+								<inputType id="com.chipon.tool.cpp.compiler.clangplug.base.input.1747360156" superClass="com.chipon.tool.cpp.compiler.clangplug.base.input"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.baseclang.845672808" name="ChipON C Lang Compiler" superClass="com.chipon32.chiponide.core.tool.llvm.baseclang">
+								<inputType id="com.chipon.tool.c.compiler.clang.base.input.647916089" superClass="com.chipon.tool.c.compiler.clang.base.input"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.basegnuas.725731574" name="ChipON Assembler" superClass="com.chipon32.chiponide.core.tool.llvm.basegnuas">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input2.1504219417" superClass="cdt.managedbuild.tool.gnu.assembler.input2"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.basegnuld.934156915" name="ChipON Linker" superClass="com.chipon32.chiponide.core.tool.llvm.basegnuld">
+								<option id="com.chipon32.chiponide.core.option4.767029604" name="芯片脚本文件" superClass="com.chipon32.chiponide.core.option4" value="-T../KF32A156MQV.ld" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1706482229" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_RELS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.basegnuobjcopy.861501068" name="ChipON ObjCopy" superClass="com.chipon32.chiponide.core.tool.llvm.basegnuobjcopy"/>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.basegnuobjdump.357850435" name="ChipON ObjDump" superClass="com.chipon32.chiponide.core.tool.llvm.basegnuobjdump"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.chipon32.chiponide.core.configuration.llvm.cexe.debug.1221407124">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.chipon32.chiponide.core.configuration.llvm.cexe.debug.1221407124" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GMakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="com.chipon32.chiponide.core.configuration.llvm.cexe.debug.1221407124" name="Debug" parent="com.chipon32.chiponide.core.configuration.llvm.cexe.debug">
+					<folderInfo id="com.chipon32.chiponide.core.configuration.llvm.cexe.debug.1221407124." name="/" resourcePath="">
+						<toolChain id="com.chipon32.chiponide.core.toolchain.llvm.cexe.debug.2083866497" name="KungFu32 Clang Tool" superClass="com.chipon32.chiponide.core.toolchain.llvm.cexe.debug">
+							<targetPlatform archList="all" id="com.chipon32.chiponide.core.toolchain.llvm.baseplatform.318908516" name="Release Platform" osList="solaris,linux,hpux,aix,qnx,win32" superClass="com.chipon32.chiponide.core.toolchain.llvm.baseplatform"/>
+							<builder buildPath="${workspace_loc:${ProjName}/${ConfigName}}" id="com.chipon32.chiponide.core.toolchain.llvm.basebuilder.1072068500" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="KungFu32 Builder" superClass="com.chipon32.chiponide.core.toolchain.llvm.basebuilder"/>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.baseclangplug.1374350495" name="ChipON C++ Lang Compiler" superClass="com.chipon32.chiponide.core.tool.llvm.baseclangplug">
+								<inputType id="com.chipon.tool.cpp.compiler.clangplug.base.input.266048689" superClass="com.chipon.tool.cpp.compiler.clangplug.base.input"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.baseclang.536582893" name="ChipON C Lang Compiler" superClass="com.chipon32.chiponide.core.tool.llvm.baseclang">
+								<inputType id="com.chipon.tool.c.compiler.clang.base.input.144260976" superClass="com.chipon.tool.c.compiler.clang.base.input"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.basegnuas.1579442992" name="ChipON Assembler" superClass="com.chipon32.chiponide.core.tool.llvm.basegnuas">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input2.750543955" superClass="cdt.managedbuild.tool.gnu.assembler.input2"/>
+							</tool>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.basegnuld.880708452" name="ChipON Linker" superClass="com.chipon32.chiponide.core.tool.llvm.basegnuld">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1059446462" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_RELS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.basegnuobjcopy.601672343" name="ChipON ObjCopy" superClass="com.chipon32.chiponide.core.tool.llvm.basegnuobjcopy"/>
+							<tool id="com.chipon32.chiponide.core.tool.llvm.basegnuobjdump.1346359731" name="ChipON ObjDump" superClass="com.chipon32.chiponide.core.tool.llvm.basegnuobjdump"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Mini_Debug_ROM_gdb_C.com.chipon32.chiponide.core.projectType.c.86628566" name="KF32-C" projectType="com.chipon32.chiponide.core.projectType.c"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="refreshScope"/>
+</cproject>

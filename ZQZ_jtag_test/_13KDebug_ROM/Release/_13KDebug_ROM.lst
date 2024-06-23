@@ -1,0 +1,576 @@
+
+_13KDebug_ROM.elf:     file format elf32-kungfu32-little
+
+
+Disassembly of section .text:
+
+80000000 <_start>:
+##@@@F_:_start():
+##@@@P_:vector.c:6
+##@@@L0001_:void startup();   
+##@@@L0002_:
+##@@@L0003_: __attribute__((section(".text")))   
+##@@@L0004_:
+##@@@L0005_:void _start()   
+##@@@L0006_:{   
+80000000:	20 5c 00 00 	MOVL      R0, #0			;->0x0000
+80000004:	40 5c 01 d0 	MOVH      R0, #53249			;->0xD001
+##@@@P_:vector.c:9
+##@@@L0007_:
+##@@@L0008_:	 __asm("mov R0,#0xD0010000");   
+##@@@L0009_:	 __asm("mov sp,r0");   
+80000008:	c0 59       	MOV       SP, R0
+##@@@P_:vector.c:11
+##@@@L0010_:
+##@@@L0011_:	 __asm("mov R4,r0");   
+8000000a:	80 58       	MOV       R4, R0
+##@@@P_:vector.c:12
+##@@@L0012_:	 __asm("mov R5,r0");   
+8000000c:	a0 58       	MOV       R5, R0
+##@@@P_:vector.c:13
+##@@@L0013_:	 __asm("mov R11,r0");   
+8000000e:	60 59       	MOV       R11, R0
+##@@@P_:vector.c:14
+##@@@L0014_:	 __asm("mov R12,r0");   
+80000010:	80 59       	MOV       R12, R0
+80000012:	80 5c 05 08 	LJMP      $+2053                ;->0x8000101c
+##@@@P_:vector.c:17
+##@@@L0015_:
+##@@@L0016_:	 __asm("ljmp startup");   
+##@@@L0017_:};   
+80000016:	1d 5c       	JMP       LR
+	...
+
+80000800 <_cpu0_trap_table>:
+##@@@F_:_cpu0_trap_table():
+##@@@P_:Trap_Debug_tc0.c:77
+##@@@L0072_:// 2^5=32   
+##@@@L0073_:#define KFX_WEAK_Trap0_Interrupt(name) 	__asm__(".align 2\n\t JMP  "#name);   
+##@@@L0074_:
+##@@@L0075_:__attribute__((section(".traptab_cpu0")))   
+##@@@L0076_:void _cpu0_trap_table (void)   
+##@@@L0077_:{   
+80000800:	00 03 80 02 	JMP       $+640                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:78
+##@@@L0078_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000804:	00 03 7e 02 	JMP       $+638                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:79
+##@@@L0079_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000808:	00 03 7c 02 	JMP       $+636                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:80
+##@@@L0080_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000080c:	00 03 7a 02 	JMP       $+634                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:81
+##@@@L0081_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000810:	00 03 78 02 	JMP       $+632                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:82
+##@@@L0082_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000814:	00 03 76 02 	JMP       $+630                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:83
+##@@@L0083_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000818:	00 03 74 02 	JMP       $+628                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:84
+##@@@L0084_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000081c:	00 03 72 02 	JMP       $+626                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:85
+##@@@L0085_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000820:	00 03 70 02 	JMP       $+624                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:86
+##@@@L0086_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000824:	00 03 6e 02 	JMP       $+622                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:87
+##@@@L0087_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000828:	00 03 6c 02 	JMP       $+620                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:88
+##@@@L0088_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000082c:	00 03 6a 02 	JMP       $+618                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:89
+##@@@L0089_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000830:	00 03 68 02 	JMP       $+616                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:90
+##@@@L0090_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000834:	00 03 66 02 	JMP       $+614                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:91
+##@@@L0091_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000838:	00 03 64 02 	JMP       $+612                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:92
+##@@@L0092_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000083c:	00 03 62 02 	JMP       $+610                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:93
+##@@@L0093_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000840:	00 03 60 02 	JMP       $+608                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:94
+##@@@L0094_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000844:	00 03 5e 02 	JMP       $+606                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:95
+##@@@L0095_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000848:	00 03 5c 02 	JMP       $+604                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:96
+##@@@L0096_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000084c:	00 03 5a 02 	JMP       $+602                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:97
+##@@@L0097_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000850:	00 03 58 02 	JMP       $+600                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:99
+##@@@L0098_:
+##@@@L0099_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000854:	00 03 56 02 	JMP       $+598                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:100
+##@@@L0100_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000858:	00 03 54 02 	JMP       $+596                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:101
+##@@@L0101_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000085c:	00 03 52 02 	JMP       $+594                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:102
+##@@@L0102_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000860:	00 03 50 02 	JMP       $+592                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:103
+##@@@L0103_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000864:	00 03 4e 02 	JMP       $+590                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:104
+##@@@L0104_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000868:	00 03 4c 02 	JMP       $+588                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:105
+##@@@L0105_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000086c:	00 03 4a 02 	JMP       $+586                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:106
+##@@@L0106_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000870:	00 03 48 02 	JMP       $+584                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:107
+##@@@L0107_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000874:	00 03 46 02 	JMP       $+582                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:108
+##@@@L0108_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000878:	00 03 44 02 	JMP       $+580                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:109
+##@@@L0109_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000087c:	00 03 42 02 	JMP       $+578                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:110
+##@@@L0110_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000880:	00 03 40 02 	JMP       $+576                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:111
+##@@@L0111_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000884:	00 03 3e 02 	JMP       $+574                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:112
+##@@@L0112_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000888:	00 03 3c 02 	JMP       $+572                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:113
+##@@@L0113_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000088c:	00 03 3a 02 	JMP       $+570                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:114
+##@@@L0114_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000890:	00 03 38 02 	JMP       $+568                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:115
+##@@@L0115_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000894:	00 03 36 02 	JMP       $+566                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:116
+##@@@L0116_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000898:	00 03 34 02 	JMP       $+564                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:117
+##@@@L0117_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000089c:	00 03 32 02 	JMP       $+562                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:118
+##@@@L0118_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008a0:	00 03 30 02 	JMP       $+560                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:120
+##@@@L0119_:
+##@@@L0120_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008a4:	00 03 2e 02 	JMP       $+558                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:121
+##@@@L0121_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008a8:	00 03 2c 02 	JMP       $+556                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:122
+##@@@L0122_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008ac:	00 03 2a 02 	JMP       $+554                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:123
+##@@@L0123_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008b0:	00 03 28 02 	JMP       $+552                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:124
+##@@@L0124_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008b4:	00 03 26 02 	JMP       $+550                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:125
+##@@@L0125_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008b8:	00 03 24 02 	JMP       $+548                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:126
+##@@@L0126_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008bc:	00 03 22 02 	JMP       $+546                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:127
+##@@@L0127_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008c0:	00 03 20 02 	JMP       $+544                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:128
+##@@@L0128_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008c4:	00 03 1e 02 	JMP       $+542                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:129
+##@@@L0129_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008c8:	00 03 1c 02 	JMP       $+540                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:130
+##@@@L0130_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008cc:	00 03 1a 02 	JMP       $+538                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:131
+##@@@L0131_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008d0:	00 03 18 02 	JMP       $+536                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:132
+##@@@L0132_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008d4:	00 03 16 02 	JMP       $+534                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:133
+##@@@L0133_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008d8:	00 03 14 02 	JMP       $+532                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:134
+##@@@L0134_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008dc:	00 03 12 02 	JMP       $+530                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:135
+##@@@L0135_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008e0:	00 03 10 02 	JMP       $+528                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:136
+##@@@L0136_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008e4:	00 03 0e 02 	JMP       $+526                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:137
+##@@@L0137_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008e8:	00 03 0c 02 	JMP       $+524                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:138
+##@@@L0138_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008ec:	00 03 0a 02 	JMP       $+522                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:139
+##@@@L0139_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008f0:	00 03 08 02 	JMP       $+520                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:141
+##@@@L0140_:
+##@@@L0141_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008f4:	00 03 06 02 	JMP       $+518                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:142
+##@@@L0142_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008f8:	00 03 04 02 	JMP       $+516                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:143
+##@@@L0143_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+800008fc:	00 03 02 02 	JMP       $+514                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:144
+##@@@L0144_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000900:	00 03 00 02 	JMP       $+512                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:145
+##@@@L0145_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000904:	00 03 fe 01 	JMP       $+510                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:146
+##@@@L0146_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000908:	00 03 fc 01 	JMP       $+508                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:147
+##@@@L0147_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000090c:	00 03 fa 01 	JMP       $+506                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:148
+##@@@L0148_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000910:	00 03 f8 01 	JMP       $+504                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:149
+##@@@L0149_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000914:	00 03 f6 01 	JMP       $+502                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:150
+##@@@L0150_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000918:	00 03 f4 01 	JMP       $+500                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:151
+##@@@L0151_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000091c:	00 03 f2 01 	JMP       $+498                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:152
+##@@@L0152_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000920:	00 03 f0 01 	JMP       $+496                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:153
+##@@@L0153_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000924:	00 03 ee 01 	JMP       $+494                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:154
+##@@@L0154_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000928:	00 03 ec 01 	JMP       $+492                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:155
+##@@@L0155_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000092c:	00 03 ea 01 	JMP       $+490                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:156
+##@@@L0156_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000930:	00 03 e8 01 	JMP       $+488                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:157
+##@@@L0157_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000934:	00 03 e6 01 	JMP       $+486                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:158
+##@@@L0158_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+80000938:	00 03 e4 01 	JMP       $+484                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:159
+##@@@L0159_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+8000093c:	00 03 e2 01 	JMP       $+482                 ;->0x80000d00
+##@@@P_:Trap_Debug_tc0.c:161
+##@@@L0160_:	KFX_WEAK_Trap0_Interrupt( debugROM);   
+##@@@L0161_:}   
+80000940:	1d 5c       	JMP       LR
+	...
+
+80000d00 <debugROM>:
+##@@@F_:debugROM():
+##@@@P_:debug_rom.asm:18
+##@@@L0013_:		.export	debugROM   
+##@@@L0014_:		.type	debugROM, @function   
+##@@@L0015_:debugROM:	   
+##@@@L0016_:	.cfi_startproc	   
+##@@@L0017_://@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   
+##@@@L0018_:	.loc 1 18   
+80000d00:	00 00       	NOP      NOP      
+	...
+
+80000d04 <entry_loop>:
+80000d04:	22 5c 00 81 	MOVL      R2, #33024			;->0x8100
+80000d08:	42 5c 00 f9 	MOVH      R2, #63744			;->0xF900
+##@@@P_:debug_rom.asm:22
+##@@@L0019_:_entry:   
+##@@@L0020_:	NOP   
+##@@@L0021_:	NOP    
+##@@@L0022_:	.loc 1 22   
+80000d0c:	10 10       	MOV       R1, #0			;->0x0000
+80000d0e:	21 85       	ST.W      [R2], R1
+80000d10:	22 5c 00 84 	MOVL      R2, #33792			;->0x8400
+80000d14:	42 5c 00 f9 	MOVH      R2, #63744			;->0xF900
+##@@@P_:debug_rom.asm:30
+##@@@L0025_:	// CSRR R1, #CSR_HARTID0   
+##@@@L0026_:	// CSRR R1, #CSR_HARTID1   
+##@@@L0027_:	MOV R1, #0			// now sigle core   
+##@@@L0028_:	ST.W [R2], R1   
+##@@@L0029_://+++++++++++++++++++++++++++++++++++   
+##@@@L0030_:	.loc 1 30   
+80000d18:	12 80       	LD.B      R1, [R2]
+##@@@P_:debug_rom.asm:34
+##@@@L0031_:	MOV R2, #0xF9008400	//	if  0x F900  8400    1 probuffer    2    resume   
+##@@@L0032_:	LD.B R1, [R2]   
+##@@@L0033_:
+##@@@L0034_:	.loc 1 34	   
+80000d1a:	11 38       	CMP       R1, #1			;->0x01
+80000d1c:	06 f0       	JZ        $+6                   ;->0x80000d28
+80000d1e:	00 00       	NOP      NOP      
+##@@@P_:debug_rom.asm:39
+##@@@L0035_:	CMP R1, #1			// probuffer, now not set and not will set to1    
+##@@@L0036_:	JZ going   
+##@@@L0037_:	NOP   
+##@@@L0038_://+++++++++++++++++++++++++++++++++++   
+##@@@L0039_:	.loc 1 39   
+80000d20:	12 38       	CMP       R1, #2			;->0x02
+80000d22:	0c f0       	JZ        $+12                  ;->0x80000d3a
+##@@@P_:debug_rom.asm:43
+##@@@L0040_:	CMP R1, #2			//    
+##@@@L0041_:	JZ _resume   
+##@@@L0042_://+++++++++++++++++++++++++++++++++++   
+##@@@L0043_:	.loc 1 43   
+80000d24:	f0 07       	SJMP      $-16                  ;->0x80000d04
+	...
+
+80000d28 <going>:
+##@@@P_:debug_rom.asm:50
+##@@@L0045_:	//CMP  R2,#XX   
+##@@@L0046_:	//JZ   _Exception	   
+##@@@L0047_:	JMP entry_loop   
+##@@@L0048_:	NOP   
+##@@@L0049_://@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	   
+##@@@L0050_:	.loc 1 50   
+80000d28:	00 00       	NOP      NOP      
+80000d2a:	10 10       	MOV       R1, #0			;->0x0000
+80000d2c:	22 5c 08 81 	MOVL      R2, #33032			;->0x8108
+80000d30:	42 5c 00 f9 	MOVH      R2, #63744			;->0xF900
+80000d34:	21 85       	ST.W      [R2], R1
+##@@@P_:debug_rom.asm:57
+##@@@L0052_://@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       
+##@@@L0053_:	NOP   
+##@@@L0054_: 	MOV R1, #0   
+##@@@L0055_:	MOV R2, #0xf9008108		//	0x F900  8108  = 0   
+##@@@L0056_:	ST.W [R2], R1   
+##@@@L0057_:	.loc 1 57   
+80000d36:	e7 07       	SJMP      $-25                  ;->0x80000d04
+	...
+
+80000d3a <_resume>:
+##@@@P_:debug_rom.asm:64
+##@@@L0059_:	// MOV R0,   
+##@@@L0060_:	// JMP R0   
+##@@@L0061_:	JMP entry_loop    // now temp goto next   
+##@@@L0062_:	NOP   
+##@@@L0063_://@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   
+##@@@L0064_:	.loc 1 64   
+80000d3a:	00 00       	NOP      NOP      
+80000d3c:	00 00       	NOP      NOP      
+80000d3e:	10 10       	MOV       R1, #0			;->0x0000
+80000d40:	22 5c 10 81 	MOVL      R2, #33040			;->0x8110
+80000d44:	42 5c 00 f9 	MOVH      R2, #63744			;->0xF900
+80000d48:	21 85       	ST.W      [R2], R1
+##@@@P_:debug_rom.asm:74
+##@@@L0069_:	// CSRR R1, #CSR_HARTID1   
+##@@@L0070_:	MOV R1, #0				// now cpu 0   
+##@@@L0071_:	MOV R2, #0xf9008110   
+##@@@L0072_:	ST.W [R2], R1			//	0x F900  8110  = 0   
+##@@@L0073_:	   
+##@@@L0074_:	.loc 1 74   
+80000d4a:	00 00       	NOP      NOP      
+80000d4c:	00 00       	NOP      NOP      
+80000d4e:	0c 00       	MRET     MRET     
+	...
+
+80000d52 <_exception>:
+##@@@P_:debug_rom.asm:81
+##@@@L0076_:	NOP   
+##@@@L0077_:	.short 0x0C	// MRET   
+##@@@L0078_:	NOP	   
+##@@@L0079_://@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   
+##@@@L0080_:_exception:   
+##@@@L0081_:	.loc 1 81   
+80000d52:	d9 07       	SJMP      $-39                  ;->0x80000d04
+	...
+
+80001000 <main>:
+##@@@F_:main():
+##@@@P_:main.c:15
+##@@@L0010_:volatile unsigned int a=3;   
+##@@@L0011_:
+##@@@L0012_:int main(void)   
+##@@@L0013_:{   
+##@@@L0014_:
+##@@@L0015_:	a=4;   
+80001000:	06 45       	LD        R5, [PC + #6]         ;->0x80001018  :=0xd0000000
+80001002:	44 10       	MOV       R4, #4			;->0x0004
+80001004:	54 85       	ST.W      [R5], R4
+80001006:	45 10       	MOV       R4, #5			;->0x0005
+80001008:	3a 10       	MOV       R3, #10			;->0x000A
+##@@@P_:main.c:19
+##@@@L0016_:	   
+##@@@L0017_:	while(1)   
+##@@@L0018_:	{   
+##@@@L0019_:		a=5;   
+8000100a:	54 85       	ST.W      [R5], R4
+##@@@P_:main.c:20
+##@@@L0020_:		a+=6;   
+8000100c:	25 82       	LD.W      R2, [R5]
+8000100e:	92 c1       	ADD       R2, R2, #6
+80001010:	52 85       	ST.W      [R5], R2
+##@@@P_:main.c:22
+##@@@L0021_:
+##@@@L0022_:		a=10;   
+80001012:	53 85       	ST.W      [R5], R3
+##@@@P_:main.c:17
+##@@@L0017_:	while(1)   
+80001014:	fb 07       	SJMP      $-5                   ;->0x8000100a
+80001016:	00 00       	NOP      NOP      
+80001018:	00 00 00 d0 	.long     0xd0000000 ->-805306368  [!!!@2@:NOP      	@@: ZXT.H     R0, R0
+
+8000101c <startup>:
+##@@@F_:startup():
+##@@@P_:startup.c:24
+##@@@L0019_://####################################################################//   
+##@@@L0020_:int main(void);   
+##@@@L0021_:int startup(void);   
+##@@@L0022_://####################################################################//   
+##@@@L0023_:int startup(void)   
+##@@@L0024_:{   
+8000101c:	2d 5d       	PUSH      LR
+8000101e:	e4 30       	SUB       SP, #4			;->0x04
+##@@@P_:startup.c:32
+##@@@L0027_:	unsigned int *end;   
+##@@@L0028_:
+##@@@L0029_:	s = (unsigned int*)&__text_end__;		   
+##@@@L0030_:	begin = (unsigned int*)&__data_start__;   
+##@@@L0031_:	end = (unsigned int*)&__data_end__;   
+##@@@L0032_:	while( begin <  end) {	// cppcheck-suppress comparePointers   
+80001020:	12 45       	LD        R5, [PC + #18]        ;->0x80001068  :=0xd0000010
+80001022:	13 40       	LD        R0, [PC + #19]        ;->0x8000106c  :=0xd0000000
+80001024:	05 70       	CMP       R0, R5
+80001026:	0d f2       	JC        $+13                  ;->0x80001040
+80001028:	20 c1       	ADD       R4, R0, #4
+8000102a:	54 70       	CMP       R5, R4
+8000102c:	02 f8       	JHI       $+2                   ;->0x80001030
+8000102e:	a4 58       	MOV       R5, R4
+80001030:	40 68       	NOT       R4, R0
+80001032:	6c c3       	ADD       R5, R4, R5
+80001034:	15 c1       	ADD       R2, R5, #4
+80001036:	0f 45       	LD        R5, [PC + #15]        ;->0x80001070  :=0xfffffffc
+80001038:	25 69       	ANL       R2, R5
+##@@@P_:startup.c:33
+##@@@L0033_:		*begin = *s;   
+8000103a:	0f 41       	LD        R1, [PC + #15]        ;->0x80001074  :=0x800010c0
+8000103c:	0f 45       	LD        R5, [PC + #15]        ;->0x80001078  :=0x80001090
+8000103e:	05 5c       	LJMP      R5
+##@@@P_:startup.c:40
+##@@@L0035_:	}   
+##@@@L0036_:
+##@@@L0037_:
+##@@@L0038_:	begin = (unsigned int*)&__bss_start__;   
+##@@@L0039_:	end = (unsigned int*)&__bss_end__;   
+##@@@L0040_:	while( begin < end ){	// cppcheck-suppress comparePointers   
+80001040:	0f 45       	LD        R5, [PC + #15]        ;->0x8000107c  :=0xd0000010
+80001042:	10 40       	LD        R0, [PC + #16]        ;->0x80001080  :=0xd0000010
+80001044:	05 70       	CMP       R0, R5
+80001046:	0d f2       	JC        $+13                  ;->0x80001060
+80001048:	20 c1       	ADD       R4, R0, #4
+8000104a:	54 70       	CMP       R5, R4
+8000104c:	02 f8       	JHI       $+2                   ;->0x80001050
+8000104e:	a4 58       	MOV       R5, R4
+80001050:	40 68       	NOT       R4, R0
+80001052:	6c c3       	ADD       R5, R4, R5
+80001054:	15 c1       	ADD       R2, R5, #4
+80001056:	07 45       	LD        R5, [PC + #7]         ;->0x80001070  :=0xfffffffc
+80001058:	25 69       	ANL       R2, R5
+8000105a:	10 10       	MOV       R1, #0			;->0x0000
+##@@@P_:startup.c:41
+##@@@L0041_:		*begin = 0;begin++;   
+8000105c:	0a 45       	LD        R5, [PC + #10]        ;->0x80001084  :=0x800010a8
+8000105e:	05 5c       	LJMP      R5
+##@@@P_:startup.c:45
+##@@@L0042_:	}   
+##@@@L0043_:
+##@@@L0044_://############# begin to run main function	#############//		   
+##@@@L0045_:	main();   
+80001060:	0a 45       	LD        R5, [PC + #10]        ;->0x80001088  :=0x80001000
+80001062:	05 5c       	LJMP      R5
+##@@@P_:startup.c:46
+##@@@L0046_:	while(1);   
+80001064:	00 04       	SJMP      $+0                   ;->0x80001064
+80001066:	00 00       	NOP      NOP      
+80001068:	10 00 00 d0 	.long     0xd0000010 ->-805306352  [!!!@4@:DMAC16LL  ACC6, ACC4, R0, R0
+8000106c:	00 00 00 d0 	.long     0xd0000000 ->-805306368  [!!!@2@:NOP      	@@: ZXT.H     R0, R0
+80001070:	fc ff ff ff 	.long     0xfffffffc ->-00000004 
+80001074:	c0 10 00 80 	.long     0x800010c0 ->-2147479360  [!!!@2@:MOV       R12, #0	@@: LD.B      R0, [R0]
+80001078:	90 10 00 80 	.long     0x80001090 ->-2147479408  [!!!@2@:MOV       R9, #0	@@: LD.B      R0, [R0]
+8000107c:	10 00 00 d0 	.long     0xd0000010 ->-805306352  [!!!@4@:DMAC16LL  ACC6, ACC4, R0, R0
+80001080:	10 00 00 d0 	.long     0xd0000010 ->-805306352  [!!!@4@:DMAC16LL  ACC6, ACC4, R0, R0
+80001084:	a8 10 00 80 	.long     0x800010a8 ->-2147479384  [!!!@2@:MOV       R10, #8	@@: LD.B      R0, [R0]
+80001088:	00 10 00 80 	.long     0x80001000 ->-2147479552  [!!!@2@:MOV       R0, #0	@@: LD.B      R0, [R0]
+8000108c:	00 00       	NOP      NOP      
+	...
+
+80001090 <memcpy>:
+##@@@F_:memcpy():
+80001090:	20 38       	CMP       R2, #0			;->0x00
+80001092:	07 f0       	JZ        $+7                   ;->0x800010a0
+80001094:	90 c2       	ADD       R2, R0, R2
+80001096:	a0 58       	MOV       R5, R0
+80001098:	41 76       	LD.B      R4, [R1++]
+8000109a:	54 77       	ST.B      [R5++], R4
+8000109c:	52 70       	CMP       R5, R2
+8000109e:	fd f1       	JNZ       $-3                   ;->0x80001098
+800010a0:	1d 5c       	JMP       LR
+800010a2:	00 00       	NOP      NOP      
+800010a4:	00 00       	NOP      NOP      
+	...
+
+800010a8 <memset>:
+##@@@F_:memset():
+800010a8:	20 38       	CMP       R2, #0			;->0x00
+800010aa:	06 f0       	JZ        $+6                   ;->0x800010b6
+800010ac:	90 c2       	ADD       R2, R0, R2
+800010ae:	a0 58       	MOV       R5, R0
+800010b0:	51 77       	ST.B      [R5++], R1
+800010b2:	52 70       	CMP       R5, R2
+800010b4:	fe f1       	JNZ       $-2                   ;->0x800010b0
+800010b6:	1d 5c       	JMP       LR
+
+800010b8 <__init_class_end>:
+	...
+
+Disassembly of section .data:
+
+d0000000 <a>:
+##@@@F_:__lpdata_end__():
+##@@@P_:main.c:10
+##@@@L0010_:volatile unsigned int a=3;   
+d0000000:	03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+
+d0000010 <__Heap_Start__>:
+	...
+
+d0000100 <__Heap_length__>:
+	...

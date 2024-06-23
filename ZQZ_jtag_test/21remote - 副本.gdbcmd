@@ -1,0 +1,59 @@
+
+set confirm off
+set pagination off
+set step-mode off
+set print elements unlimited
+set print repeats unlimited
+
+file ./debug_jtag_sample_demo.elf
+
+echo ________target kf32remote______________\n
+
+target kf32remote COM3 --kfvoltage=3 --kfd-speed=1 --kft-code=4 --kfd-code=0  --nocarryLib=1 --kf-feature=0 --kf-drvier=1 --kf-authkey=01020304F1F2F3F4112233445566778811020304F1F2F3F41122334455667789 --kfinstruct=kf32r --kfprint --arch=./KF32A2218.def
+
+echo ________open serial log______________\n
+kf32Debug on ./remote_prot.log
+
+
+manualdmi 2 1 0x40 0x0  0 0 0
+
+
+echo _____________temp test coresel_________________\n
+mulcore 1
+mulcore 0
+
+echo __________temp test isa____________________\n
+manualcommand 1 5 0x01 
+
+echo __________temp test data____________________\n
+manualdata     0x12345678 32
+manualdata     0x87654321 32
+
+echo __________temp test isa____________________\n
+manualcommand 3 5 0x01 5 0x10 5 0x11
+
+echo __________temp test dmi____________________\n
+manualdmi 3 2 0x7F 0x1234 1 0x7F 0x5678 0 0x0 0
+
+echo __________breaktest____________________\n
+break main
+del
+
+echo __________readtest____________________\n
+x /4w 0x70000000
+
+x /16w 0x80000000
+
+echo __________read coretest____________________\n
+manualdmi 3  2 0x17 0x00220000   1 0x04 0x00  0 0x04 0x00
+manualdmi 3  2 0x17 0x00220180   1 0x04 0x00  0 0x04 0x00
+
+echo ________gdb debug load______________\n
+#load
+
+echo ________break main and run______________\n
+#break main
+#run
+
+
+
